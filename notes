@@ -9,6 +9,8 @@ kubectl explain RESOURE_NAME
 kubectl explain replicaset --api-version apps/v1
 
 kubectl api-versions
+The output is presented in form of "group/version". Check this page, to learn more about API versioning in Kubernetes.
+
 
 Sometimes, you just want to check if a particular group/version is available for some resource. Most resources have available get method, so just try to get a resource while providing API version and group kubectl get <API_RESOURCE_NAME>.<API_VERSION>.<API_GROUP>
 
