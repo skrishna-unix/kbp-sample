@@ -1,0 +1,16 @@
+APIGROUP - check the official docs to learn more, but in short, you will use it like this apiVersion: <APIGROUP>/v1 in yaml files
+
+kubectl api-resources -o wide
+
+kubectl api-resources --api-group apps -o wide
+
+kubectl explain RESOURE_NAME
+
+kubectl explain replicaset --api-version apps/v1
+
+kubectl api-versions
+
+Sometimes, you just want to check if a particular group/version is available for some resource. Most resources have available get method, so just try to get a resource while providing API version and group kubectl get <API_RESOURCE_NAME>.<API_VERSION>.<API_GROUP>
+
+kubectl get deployments.v1.apps -n kube-system
+
