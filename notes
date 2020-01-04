@@ -19,4 +19,13 @@ kubectl get deployments.v1.apps -n kube-system
 kubectl api-resources --api-group=''  
 in kubernetes empty is denoted as '' , Which is the core / legacy group by default
 
+kubectl run bash --rm -it  --image=bash -- bash
+
+
+
+kubectl run bash1  -it  --image=bash -- bash 
+Session ended, resume using 'kubectl attach bash1-6455f8d7d8-jbsvd -c bash1 -i -t' command when the pod is running
+
+
+
 
